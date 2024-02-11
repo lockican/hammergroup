@@ -713,6 +713,8 @@ ul{
 
 .main--inner{
     min-height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main--inner .main-content{
@@ -724,6 +726,11 @@ ul{
 .main--inner .main-title{
     width: 100%;
     text-align: center;
+    padding-bottom: 100px;
+}
+
+.main--inner::after{
+    background-color: rgba(20, 20, 20, 0.8);
 }
 
 .cards{
@@ -802,5 +809,19 @@ ul{
 .link-arrow::after{
     content: " →";
     font-family: Arial, Helvetica, sans-serif;
+}
 
+.card-annotaton{
+    color: #777;
+    font-size: 14px;
+    line-height: 1.55;
+    font-family: 'amazin';
+}
+
+.cards .card_item--noborder{
+    margin-bottom: 0;
+}
+
+.cards .card_item--noborder::after{
+    display: none;
 }
