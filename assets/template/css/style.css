@@ -7,6 +7,10 @@
     src: url('../fonts/Montserrat-Regular.ttf');
 }
 
+*{
+    box-sizing: border-box;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'amazin';
     color: #fff;
@@ -705,4 +709,98 @@ ul{
 .gallery_slider .slick-arrow svg{
     width: 9px;
     height: 16px;
+}
+
+.main--inner{
+    min-height: 350px;
+}
+
+.main--inner .main-content{
+    padding: 0;
+    padding-top: 200px;
+    position: relative;
+}
+
+.main--inner .main-title{
+    width: 100%;
+    text-align: center;
+}
+
+.cards{
+    background-color: #141414;
+    padding: 80px 0;
+}
+
+.card_item{
+    display: flex;
+    gap: 40px;
+    position: relative;
+}
+
+
+.card_item:not(:last-child){
+    padding-bottom: 80px ;
+    margin-bottom: 80px;
+}
+
+.card_item:not(:last-child):after{
+    position: absolute;
+    content: '';
+    width: 160px;
+    height: 1px;
+    background-color: #c6a277;
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card_info{
+    font-size: 16px;
+    color: #d1d1d1;
+}
+
+.card_info p{
+    margin: 0;
+}
+
+.card_title{
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #f7f7f7;
+}
+ 
+
+.card_item img,.card_info{
+    width: 560px;
+}
+
+.card_item img{
+    align-self: flex-start;
+}
+
+.gray-block{
+    padding: 80px 0;
+}
+
+.link-arrow{
+    color: rgb(198, 162, 119);
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.link-arrow:hover{
+    color: #ccb497;
+}
+
+.link-arrow::after{
+    content: " →";
+    font-family: Arial, Helvetica, sans-serif;
+
 }
