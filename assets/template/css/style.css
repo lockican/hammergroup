@@ -825,3 +825,15 @@ ul{
 .cards .card_item--noborder::after{
     display: none;
 }
+
+.portfolio{
+    padding: 80px 0;
+}
+
+.portfolio .park_item{
+    width: 48%;
+}
+
+.portfolio .park_list{
+    padding: 0;
+}
