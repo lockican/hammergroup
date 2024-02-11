@@ -36,7 +36,7 @@ body {
 
 .container{
     padding: 0 20px;
-    width: 1160px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -530,7 +530,7 @@ ul{
 }
 
 .tab-content{
-    display: flex;
+    display: none;
 }
 
 .tab-block{
@@ -540,4 +540,8 @@ ul{
 
 .tab-block:not(:last-child){
     border-right: 2px solid #564c3f;
+}
+
+.tab-content.active{
+    display: flex;
 }

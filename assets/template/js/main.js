@@ -29,7 +29,15 @@ $(document).ready(function(){
         dots:true
     });
 
+    $('.tab-head').click(function(){
+        let currentAttr = $(this).data('tab');
 
+        $('.tab-content').removeClass('active')
+        $('.tab-head').removeClass('active')
+
+        $(this).addClass('active');
+        $(`.tab-content[data-tab=${currentAttr}]`).addClass('active');
+    })
 
       
 })
