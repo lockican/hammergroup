@@ -42,5 +42,32 @@ $(document).ready(function(){
         $(`.tab-content[data-tab=${currentAttr}]`).addClass('active');
     })
 
+
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        var targetId = $(this).attr('href').substring(1);
+        var $targetElement = $('#' + targetId);
+
+        if ($targetElement.length) {
+            var offsetTop = $targetElement.offset().top;
+            $('html, body').animate({
+                scrollTop: offsetTop
+            }, 1000);
+        }
+    });
+
       
 })
+
+
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    var scrollPosition = window.scrollY - 500;
+    var headerHeight = header.offsetHeight;
+    
+    var scrollPercentage = scrollPosition / headerHeight;
+    var colorOpacity = Math.min(scrollPercentage, 1);
+  
+    header.style.backgroundColor = 'rgba(50, 50, 50, ' + colorOpacity + ')';
+  });
