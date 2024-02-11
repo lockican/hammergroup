@@ -26,7 +26,10 @@ $(document).ready(function(){
  
         slidesToShow: 3,
         variableWidth: true,
-        dots:true
+        dots:true,
+        prevArrow: '<button id="prev2" type="button" class="slick-prev slick-arrow"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#c6a277" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline></svg></button>',
+        nextArrow: '<button id="next2" type="button" class="slick-next slick-arrow"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#c6a277" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline></svg></button>'
+      
     });
 
     $('.tab-head').click(function(){
