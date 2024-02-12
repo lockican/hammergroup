@@ -43,7 +43,7 @@ $(document).ready(function(){
     })
 
 
-    $('a[href^="#"]').on('click', function(e) {
+    $('a[href^="#"]').not('[data-fancybox]').on('click', function(e) {
         e.preventDefault();
 
         var targetId = $(this).attr('href').substring(1);
@@ -55,6 +55,10 @@ $(document).ready(function(){
                 scrollTop: offsetTop
             }, 1000);
         }
+    });
+
+    $('[data-fancybox]').fancybox({
+      
     });
 
       
