@@ -370,7 +370,7 @@ h2{
     color: #323232;
 }
 
-.park_additional-text{
+.park_additional-text,.additional-text{
     font-size: 16px;
     line-height: 1.2;
     color: #d1d1d1;
@@ -383,7 +383,9 @@ h2{
 }
 
 .park_additional-text::before,
-.park_additional-text::after{
+.park_additional-text::after,
+.additional-text::before,
+.additional-text::after{
     content: '';
     position: absolute;
     width: 140px;
@@ -394,14 +396,17 @@ h2{
     margin: 0 auto;
 }
 
-.park_additional-text::before{
+.park_additional-text::before,
+.additional-text::before{
     top: 0;
 }
-.park_additional-text::after{
+.park_additional-text::after,
+.additional-text::after{
     bottom:  0;
 }
 
-.park_additional-text span{
+.park_additional-text span,
+.additional-text span{
     font-weight: 600;
     color: rgb(198, 162, 119);
 }
@@ -864,4 +869,85 @@ ul{
     color: #d1d1d1;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+.info{
+    padding: 40px 0;
+}
+
+.black-block{
+    padding: 40px 0;
+    background-color: #141414;
+}
+
+.gallery_list{
+    display: flex;
+    gap:3.1%;
+    row-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.gallery_img{
+    width: 260px;
+    height: 195px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.gallery_item{
+    width: 260px;
+}
+
+.gallery_title{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.form-request{
+    padding: 100px 0;
+    background:  linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(
+        "../img/form-req.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-request_title{
+    font-size: 50px;
+    font-family: 'amazin';
+    color: #f7f7f7;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-request_desc{
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.form-request--btn{
+  
+    display: block;
+    width: 318px;
+    text-align: center;
+}
+
+.form-request-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-request-inner svg{
+    width: 45px;
+    height: 101px;
 }
