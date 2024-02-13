@@ -40,7 +40,7 @@ body {
 
 .container{
     padding: 0 20px;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -494,7 +494,10 @@ h2{
     width: 760px;
     height: 550px;
     display: block;
- 
+}
+
+.gallery-slide:not(.slick-current){
+    opacity: 0.2;
 }
 
 .gallery-slide img{
@@ -774,6 +777,14 @@ ul{
     color: #d1d1d1;
 }
 
+.card_info a{
+    color: rgb(198, 162, 119);
+    border-bottom: 1px solid rgb(198, 162, 119);
+    box-shadow: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 .card_info p{
     margin: 0;
 }
@@ -1016,3 +1027,4 @@ ul{
     flex-direction: column;
     gap: 30px;
 }
+

@@ -23,7 +23,8 @@ $(document).ready(function(){
 
     $('.gallery_slider').slick({
         centerMode: true,
- 
+        focusOnSelect: true,
+        touchMove:false,
         slidesToShow: 3,
         variableWidth: true,
         dots:true,
@@ -57,9 +58,7 @@ $(document).ready(function(){
         }
     });
 
-    $('[data-fancybox]').fancybox({
-      
-    });
+    
 
       
 })
